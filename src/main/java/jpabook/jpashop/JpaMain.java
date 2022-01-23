@@ -1,5 +1,8 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.OrderItem;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -16,6 +19,9 @@ public class JpaMain {
         tx.begin();
         //code
         try {
+            Order order = new Order();
+            order.addOrderItems(new OrderItem());
+
 
 
             tx.commit(); // DB에 쿼리가 날라가는 순간
