@@ -67,7 +67,7 @@ public class Order {
     }
 
     public void addOrderItems(OrderItem orderItem){
-        this.orderItems.add(orderItem); // 리스트에도 넣어주기 
+        this.orderItems.add(orderItem); // 리스트에도 넣어주기
         orderItem.setOrder(this); // 주인에 넣어주기
     }
 }
